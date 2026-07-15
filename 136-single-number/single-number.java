@@ -1,3 +1,5 @@
+// brute force solved by me 
+
 class Solution {
     public int singleNumber(int[] nums) {
 int n = nums.length;
@@ -14,6 +16,6 @@ int n = nums.length;
 if(count ==1) return num;
       }
         return -1;
-        
+
       }
 }
