@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Solution {
     public List<Integer> majorityElement(int[] nums) {
-        // Step 1: Candidate Selection
+        
         Integer cand1 = null;
         Integer cand2 = null;
         int count1 = 0;
@@ -26,7 +26,7 @@ public class Solution {
             }
         }
 
-        // Step 2: Verification
+        
         count1 = 0;
         count2 = 0;
 
