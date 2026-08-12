@@ -11,26 +11,18 @@ public class Solution {
         for (int i = 1; i < nums.length; i++) {
             int num = nums[i];
 
-            // If the current number is negative, swap max and min
             if (num < 0) {
                 int temp = currMax;
                 currMax = currMin;
                 currMin = temp;
             }
 
-            // Either start a new subarray at 'num' or extend the existing one
             currMax = Math.max(num, currMax * num);
             currMin = Math.min(num, currMin * num);
 
-            // Update global maximum
             result = Math.max(result, currMax);
         }
 
         return result;
-    }
-
-    public static void main(String[] args) {
-        int[] nums = {2, 3, -2, 4, -1};
-        System.out.println("Maximum Subarray Product: " + maxProduct(nums));
-    }
+            }
 }
