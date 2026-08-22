@@ -9,7 +9,7 @@ class Solution {
                     result.append(c);
                 }
                 opened++;
-            } else { // c == ')'
+            } else { 
                 opened--;
                 if (opened > 0) {
                     result.append(c);
