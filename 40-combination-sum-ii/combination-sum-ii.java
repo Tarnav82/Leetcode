@@ -29,7 +29,7 @@ class Solution {
             current.add(candidates[i]);
            
             backtrack(candidates, remain - candidates[i], i + 1, current, result);
-            current.remove(current.size() - 1); // Backtrack
+            current.remove(current.size() - 1); 
 
         
     }
